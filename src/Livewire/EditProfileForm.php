@@ -36,7 +36,7 @@ class EditProfileForm extends BaseProfileForm
         return $form
             ->schema([
                 Section::make(__('filament-edit-profile::default.profile_information'))
-                    ->aside()
+                    ->aside(config('filament-edit-profile.aside', true))
                     ->description(__('filament-edit-profile::default.profile_information_description'))
                     ->schema([
                         FileUpload::make(config('filament-edit-profile.avatar_column', 'avatar_url'))
