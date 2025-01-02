@@ -1,8 +1,7 @@
 @php
     $asideClass = config('filament-edit-profile.aside', true) ? 'aside' : '';
 @endphp
-
-<x-filament::section :class="$asideClass">
+<x-filament::section>
     <x-slot name="heading">
         {{ __('filament-edit-profile::default.token_section_title') }}
     </x-slot>
